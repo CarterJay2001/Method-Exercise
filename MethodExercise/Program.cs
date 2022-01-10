@@ -16,25 +16,20 @@ namespace MethodExercise
             switch (decision1)
             {
                 case 1:
-                    Console.WriteLine("Great we will begin now, all I need you to" +
+                    Console.WriteLine("\nGreat we will begin now, all I need you to" +
                         " do is answer a few questions for me please.");
 
-                    Console.WriteLine("What is your name?");
-                    string name = Console.ReadLine();
+                    string name = Name();
 
-                    Console.WriteLine("What is your favorite color?");
-                    string favColor = Console.ReadLine();
+                    string favColor = FavColor();
 
-                    Console.WriteLine("What is your favorite animal?");
-                    string favAnimal = Console.ReadLine();
+                    string favAnimal = FavAnimal();
 
-                    Console.WriteLine("What is your favorite band?");
-                    string favBand = Console.ReadLine();
+                    string favBand = FavBand();
 
-
-                    Console.WriteLine($"This is {name}. {name}\'s favorite color is {favColor}," +
+                    Console.WriteLine($"\nThis is {name}. {name}\'s favorite color is {favColor}," +
                         $" they wish everything was that color. Even {favAnimal}s, which" +
-                        $" happen to be their favorite animal. If you call {name}\'s name and" +
+                        $" happen to be their favorite animal.\nIf you call {name}\'s name and" +
                         $" they don't answer its probably because they're too busy listening" +
                         $" to {favBand}. They're always listening to {favBand}.");
 
@@ -42,8 +37,8 @@ namespace MethodExercise
                     break;
 
                 case 2:
-                    Console.WriteLine("Welcome to the calculator, what operator " +
-                        "would you like to use?");
+                    Console.WriteLine("\nWelcome to the calculator, which operator " +
+                        "would you like to use?:");
                     Console.WriteLine(" 1 for Addition" +
                         "\n 2 for Subtraction" +
                         "\n 3 for Multiplication" +
@@ -51,9 +46,9 @@ namespace MethodExercise
                         "\n 5 for Getting a Remainder");
                     int decision2 = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine("And your first number please: ");
+                    Console.WriteLine("\nAnd your first number please: ");
                     int n1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("And the second number please:");
+                    Console.WriteLine("\nAnd the second number please:");
                     int n2 = Convert.ToInt32(Console.ReadLine());
 
                     switch (decision2)
@@ -106,6 +101,38 @@ namespace MethodExercise
 
 
 
+        }
+
+        public static string Name()
+        {
+            Console.WriteLine("\nWhat is your name?");
+            string name = Console.ReadLine();
+
+            return name;
+        }
+
+        public static string FavColor()
+        {
+            Console.WriteLine("\nWhat is your favorite color?");
+            string favColor = Console.ReadLine();
+
+            return favColor;
+        }
+
+        public static string FavAnimal()
+        {
+            Console.WriteLine("\nWhat is your favorite animal?");
+            string favAnimal = Console.ReadLine();
+
+            return favAnimal;
+        }
+
+        public static string FavBand()
+        {
+            Console.WriteLine("\nWhat is your favorite band?");
+            string favBand = Console.ReadLine();
+
+            return favBand;
         }
 
         public static int Add(int num1, int num2)

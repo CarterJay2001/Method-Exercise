@@ -46,11 +46,6 @@ namespace MethodExercise
                         "\n 5 for Getting a Remainder");
                     int decision2 = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine("\nAnd your first number please: ");
-                    int n1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("\nAnd the second number please:");
-                    int n2 = Convert.ToInt32(Console.ReadLine());
-
                     switch (decision2)
                     {
                         case 1:
@@ -84,17 +79,17 @@ namespace MethodExercise
                             break;
                     }
 
-                    Console.WriteLine("Thanks for using the calculator! Goodbye!");
+                    Console.WriteLine("\nThanks for using the calculator! Goodbye!");
 
                     break;
 
                 case 3:
-                    Console.WriteLine("Sorry about that, Goodbye.");
+                    Console.WriteLine("\nSorry about that, Goodbye.");
 
                     break;
 
                 default:
-                    Console.WriteLine("Invalid Input Entered, Goodbye.");
+                    Console.WriteLine("\nInvalid Input Entered, Goodbye.");
 
                     break;
             }
@@ -142,7 +137,7 @@ namespace MethodExercise
             Console.WriteLine("\nAnd the second number please:");
             int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 + num2;
-            Console.WriteLine($"{num1} + {num2} = {ans}");
+            Console.WriteLine($"\n{num1} + {num2} = {ans}");
         }
         public static void Subtract()
         {
@@ -151,7 +146,7 @@ namespace MethodExercise
             Console.WriteLine("\nAnd the second number please:");
             int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 - num2;
-            Console.WriteLine($"{num1} - {num2} = {ans}");
+            Console.WriteLine($"\n{num1} - {num2} = {ans}");
         }
         public static void Multiply()
         {
@@ -160,7 +155,7 @@ namespace MethodExercise
             Console.WriteLine("\nAnd the second number please:");
             int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 * num2;
-            Console.WriteLine($"{num1} * {num2} = {ans}");
+            Console.WriteLine($"\n{num1} * {num2} = {ans}");
         }
         public static void Divide()
         {
@@ -169,7 +164,7 @@ namespace MethodExercise
             Console.WriteLine("\nAnd the second number please:");
             int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 / num2;
-            Console.WriteLine($"{num1} / {num2} = {ans}");
+            Console.WriteLine($"\n{num1} / {num2} = {ans}");
         }
         public static void Modulus()
         {
@@ -178,7 +173,7 @@ namespace MethodExercise
             Console.WriteLine("\nAnd the second number please:");
             int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 % num2;
-            Console.WriteLine($"The remainder of {num1} and {num2} is {ans}");
+            Console.WriteLine($"\nThe remainder of {num1} and {num2} is {ans}");
         }
     }
 }

@@ -54,27 +54,27 @@ namespace MethodExercise
                     switch (decision2)
                     {
                         case 1:
-                            Add(n1, n2);
+                            Add();
 
                             break;
 
                         case 2:
-                            Subtract(n1, n2);
+                            Subtract();
 
                             break;
 
                         case 3:
-                            Multiply(n1, n2);
+                            Multiply();
 
                             break;
 
                         case 4:
-                            Divide(n1, n2);
+                            Divide();
 
                             break;
 
                         case 5:
-                            Modulus(n1, n2);
+                            Modulus();
 
                             break;
 
@@ -135,35 +135,50 @@ namespace MethodExercise
             return favBand;
         }
 
-        public static int Add(int num1, int num2)
+        public static void Add()
         {
+            Console.WriteLine("\nAnd your first number please: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nAnd the second number please:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 + num2;
             Console.WriteLine($"{num1} + {num2} = {ans}");
-            return ans;
         }
-        public static int Subtract(int num1, int num2)
+        public static void Subtract()
         {
+            Console.WriteLine("\nAnd your first number please: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nAnd the second number please:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 - num2;
             Console.WriteLine($"{num1} - {num2} = {ans}");
-            return ans;
         }
-        public static int Multiply(int num1, int num2)
+        public static void Multiply()
         {
+            Console.WriteLine("\nAnd your first number please: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nAnd the second number please:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 * num2;
             Console.WriteLine($"{num1} * {num2} = {ans}");
-            return ans;
         }
-        public static int Divide(int num1, int num2)
+        public static void Divide()
         {
+            Console.WriteLine("\nAnd your first number please: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nAnd the second number please:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 / num2;
             Console.WriteLine($"{num1} / {num2} = {ans}");
-            return ans;
         }
-        public static int Modulus(int num1, int num2)
+        public static void Modulus()
         {
+            Console.WriteLine("\nAnd your first number please: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nAnd the second number please:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
             int ans = num1 % num2;
             Console.WriteLine($"The remainder of {num1} and {num2} is {ans}");
-            return ans;
         }
     }
 }
